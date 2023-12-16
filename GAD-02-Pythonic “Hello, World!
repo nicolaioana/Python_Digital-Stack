@@ -1,0 +1,28 @@
+# declararea listei
+my_list = [7, 8, 9, 2, 3, 1, 4, 10, 5, 6]
+print("Lista: " + str(my_list))
+
+# afisarea unei alte liste ordonata ascendent
+my_unordered_list = my_list.copy()
+print(my_unordered_list)
+my_unordered_list.sort()
+my_ascendant_ordered_list = list(my_unordered_list)
+print(my_ascendant_ordered_list)
+
+# afisarea unei alte liste ordonata descendent
+my_unordered_list.sort(reverse=True)
+my_descendant_ordered_list = list(my_unordered_list)
+print(my_descendant_ordered_list)
+
+# afisarea numerelor cu indici pari din lista
+my_sliced_list = my_list[::2]
+print(my_sliced_list)
+
+# afisarea numerelor cu indici impari din lista
+my_sliced_list1 = my_list[1::2]
+print(my_sliced_list1)
+
+# afisarea elementelor multipli ai lui 3
+for element in my_list:
+    if element % 3 == 0:
+        print(element)
